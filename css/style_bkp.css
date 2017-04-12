@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+*{
+  margin:0;
+}
+
+html,body{
+    height:100%;
+}
+
+
+
+  nav {
+    position:fixed;
+		margin-top: 350px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+    text-align: center;
+
+}
+
+nav a {
+  text-decoration:none;
+  font-size: 5.0em;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #fff;
+  margin-left:30px;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+}
+
+nav b {
+  text-decoration:none;
+  font-size: 0.5em;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #fff;
+  margin-left:30px;
+  line-height: 30px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+}
+
+.sect {
+  height: 100%;
+  background-color: rgb(214, 215, 176);
+}
+
+.sectOne{
+	background-image: url("../images/imagem1.jpg");
+
+}
+/* MEDIA Adaptador */
+@media screen and (max-width: 500px){
+
+	nav {
+		position:fixed;
+		margin-top: 250px;
+		width: 100%;
+		height: 40px;
+		background-color: rgba(0,0,0,.5);
+		z-index: 99;
+		text-align: center;
+
+		}
+
+	nav a {
+	  text-decoration:none;
+	  font-size: 1.0em;
+	  font-family: 'Lato', Calibri, Arial, sans-serif;
+	  color: #fff;
+		  margin-left:30px;
+	  line-height: 50px;
+	  letter-spacing: 0.3em;
+	  text-transform: uppercase;
+
+
+		}
+		nav b {
+		  text-decoration:none;
+		  font-size: 0.5em;
+		  font-family: 'Lato', Calibri, Arial, sans-serif;
+		  color: #fff;
+		  margin-left:3px;
+		  line-height: 54px;
+		  letter-spacing: 0.3em;
+		  text-transform: uppercase;
+		}
+		.sect {
+		  height: 100%;
+		  background-color: rgb(214, 215, 176);
+		}
+		.sectOne{
+		    background-image: url("../images/imagem1.jpg");
+				background-size: 150% 100%;
+				background-position: 0px 0px;
+		}
+}
+@media screen and (max-height: 320px){
+
+	nav {
+		position:fixed;
+		margin-top: 50px;
+		width: 100%;
+		height: 40px;
+		background-color: rgba(0,0,0,.5);
+		z-index: 99;
+		text-align: center;
+
+		}
+
+	nav a {
+	  text-decoration:none;
+	  font-size: 1.0em;
+	  font-family: 'Lato', Calibri, Arial, sans-serif;
+	  color: #fff;
+		  margin-left:30px;
+	  line-height: 50px;
+	  letter-spacing: 0.3em;
+	  text-transform: uppercase;
+
+
+		}
+		nav b {
+		  text-decoration:none;
+		  font-size: 0.5em;
+		  font-family: 'Lato', Calibri, Arial, sans-serif;
+		  color: #fff;
+		  margin-left:3px;
+		  line-height: 54px;
+		  letter-spacing: 0.3em;
+		  text-transform: uppercase;
+		}
+		.sect {
+		  height: 100%;
+		  background-color: rgb(214, 215, 176);
+		}
+		.sectOne{
+		    background-image: url("../images/imagem1.jpg");
+				background-size: 150% 100%;
+				background-position: 0px 0px;
+		}
+}
