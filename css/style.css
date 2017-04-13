@@ -437,7 +437,7 @@ nav {
 
 /*------------- Adaptador de MEDIA ------------- */
 /* Adaptação para site mobile */
-@media screen and (min-width: 400px){
+@media screen and (min-width: 1px){
 
 	#Home p{
 		line-height: 7.5rem;
@@ -453,17 +453,22 @@ nav {
 
 	#publicidade p{
 		height: 1.5rem;
-		width: 200px;
+		width: 180px;
 	}
 	#cabeçalho{
 		position: fixed;
+		height: 1.5rem;
 	}
 	.cabeçalho_logo_span{
 		line-height: 1.5rem;
 		font-size: .8rem;
 	}
 	.cabeçalho_logo{
-		width: 6rem;
+		width: 5rem;
+	}
+	.botão_cabeçalho{
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 	#roundButton{
 		width: 1vw;
@@ -471,6 +476,12 @@ nav {
 		border: 2px solid #0065A6;
 		margin-top: .2rem;
 	}
+	#MenuOculto h2 a{
+		line-height:5rem ;
+		font-size: 2.5rem;
+		margin-left: 2rem;
+	}
+
 
 		#Servico img {
 			max-width: 25vw;
@@ -481,7 +492,7 @@ nav {
 
 		}
 		#Servico h1{
-			padding: 100px 0px 50px 0px;
+			padding: 30px 0px 20px 0px;
 		}
 		#Servico h2{
 			font-size: 3vh;
@@ -489,69 +500,33 @@ nav {
 		#Servico .espaco{
 			min-width: 20px;
 		}
-
-
-		#Contato2 table{
-			margin-left: 4vw;
-			margin-top: 50%;
-			max-width: 700px;
-			min-width: 650px;
-		}
-		#Contato2 .espaco{
-			min-width: 20px;
-
-		}
-		#Contato2 .format_conteudo{
-			padding: 10px;
-		}
-}
-/* Adaptação rotação mobile*/
-@media screen and (min-height: 400px){
-
-	#Home p{
-		line-height: 7.5rem;
-	}
-	#Home h1{
-		padding: 30vh 0px 0px 0px;
-	}
-	#publicidade p{
-		height: 7.5rem;
-	}
-	#cabeçalho{
-		position: fixed;
-	}
-
-		#Servico img {
-			max-width: 25vw;
-			max-height: 25vw;
-		}
-		#Servico table{
-			margin-left: 1%;
-
-		}
-		#Servico h1{
-			padding: 100px 0px 50px 0px;
-		}
-		#Servico h2{
-			font-size: 3vh;
-		}
-		#Servico .espaco{
-			min-width: 20px;
+		#Servico p{
+			font-size: .6rem;
 		}
 
 
 		#Contato2 table{
 			margin-left: 4vw;
 			margin-top: 50%;
-			max-width: 700px;
-			min-width: 650px;
+			max-width: 300px;
+			min-width: 250px;
 		}
 		#Contato2 .espaco{
-			min-width: 20px;
+			min-width: 2px;
 
 		}
 		#Contato2 .format_conteudo{
-			padding: 10px;
+			padding: 3px;
+		}
+		#Contato2 img{
+			width: 30px;
+		}
+		#Contato2 p{
+			font-size: .6rem;
+			padding-bottom: 18px;
+		}
+		#Contato2 h2{
+			padding: 40px 0px 20px 0px;
 		}
 }
 
