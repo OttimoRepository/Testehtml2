@@ -47,23 +47,7 @@ html,body{
 	background-image: url("../images/imagem5.jpg");
 	b
 }
-/*------------- Adaptador de MEDIA ------------- */
-/* Adaptação para site mobile */
-@media screen and (max-width: 500px){
 
-	.sectOne{
-		background-size: 150% 100%;
-		background-position: 0px 0px;
-	}
-}
-/* Adaptação rotação mobile*/
-@media screen and (max-height: 320px){
-
-	.sectOne{
-	background-size: 150% 100%;
-	background-position: 0px 0px;
-	}
-}
 
 /*------Cabeçalho da página-----*/
 #cabeçalho{
@@ -368,8 +352,6 @@ nav {
 }
 #Servico img {
 	width: auto;
-	max-width: 500px;
-	max-height: 250px;
 	height: auto;
 	display: block;
 	margin: 0 auto;
@@ -417,7 +399,6 @@ nav {
 }
 #Contato2 td {
 	background: #fff;
-	padding: 50px;
 }
 #Contato2 h2{
 	text-align: center;
@@ -440,10 +421,269 @@ nav {
 	opacity: 0;
 	background: #000;
 }
+#Contato2 .format_conteudo{
+	padding: 50px;
+}
 
 
 /*---------Noticias---------*/
 #Noticias h1{
 	margin: 0;
 	padding: 0;
+}
+
+
+
+
+/*------------- Adaptador de MEDIA ------------- */
+/* Adaptação para site mobile */
+@media screen and (min-width: 400px){
+
+	#Home p{
+		line-height: 7.5rem;
+	}
+	#Home h1{
+		padding: 30vh 0px 0px 0px;
+		font-size: 1em;
+	}
+#Home p {
+	font-size: .8em;
+	line-height: 1.5rem;
+}
+
+	#publicidade p{
+		height: 1.5rem;
+		width: 200px;
+	}
+	#cabeçalho{
+		position: fixed;
+	}
+	.cabeçalho_logo_span{
+		line-height: 1.5rem;
+		font-size: .8rem;
+	}
+	.cabeçalho_logo{
+		width: 6rem;
+	}
+	#roundButton{
+		width: 1vw;
+		height: 3vh;
+		border: 2px solid #0065A6;
+		margin-top: .2rem;
+	}
+
+		#Servico img {
+			max-width: 25vw;
+			max-height: 25vw;
+		}
+		#Servico table{
+			margin-left: 1%;
+
+		}
+		#Servico h1{
+			padding: 100px 0px 50px 0px;
+		}
+		#Servico h2{
+			font-size: 3vh;
+		}
+		#Servico .espaco{
+			min-width: 20px;
+		}
+
+
+		#Contato2 table{
+			margin-left: 4vw;
+			margin-top: 50%;
+			max-width: 700px;
+			min-width: 650px;
+		}
+		#Contato2 .espaco{
+			min-width: 20px;
+
+		}
+		#Contato2 .format_conteudo{
+			padding: 10px;
+		}
+}
+/* Adaptação rotação mobile*/
+@media screen and (min-height: 400px){
+
+	#Home p{
+		line-height: 7.5rem;
+	}
+	#Home h1{
+		padding: 30vh 0px 0px 0px;
+	}
+	#publicidade p{
+		height: 7.5rem;
+	}
+	#cabeçalho{
+		position: fixed;
+	}
+
+		#Servico img {
+			max-width: 25vw;
+			max-height: 25vw;
+		}
+		#Servico table{
+			margin-left: 1%;
+
+		}
+		#Servico h1{
+			padding: 100px 0px 50px 0px;
+		}
+		#Servico h2{
+			font-size: 3vh;
+		}
+		#Servico .espaco{
+			min-width: 20px;
+		}
+
+
+		#Contato2 table{
+			margin-left: 4vw;
+			margin-top: 50%;
+			max-width: 700px;
+			min-width: 650px;
+		}
+		#Contato2 .espaco{
+			min-width: 20px;
+
+		}
+		#Contato2 .format_conteudo{
+			padding: 10px;
+		}
+}
+
+
+/* Adaptação para site tablet */
+@media screen and (min-width: 550px){
+
+#Home p{
+	line-height: 7.5rem;
+}
+#Home h1{
+	padding: 30vh 0px 0px 0px;
+}
+#publicidade p{
+	height: 7.5rem;
+}
+#cabeçalho{
+	position: fixed;
+}
+
+	#Servico img {
+		max-width: 25vw;
+		max-height: 25vw;
+	}
+	#Servico table{
+		margin-left: 1%;
+
+	}
+	#Servico h1{
+		padding: 100px 0px 50px 0px;
+	}
+	#Servico h2{
+		font-size: 3vh;
+	}
+	#Servico .espaco{
+		min-width: 20px;
+	}
+
+
+	#Contato2 table{
+		margin-left: 4vw;
+		margin-top: 50%;
+		max-width: 700px;
+		min-width: 650px;
+	}
+	#Contato2 .espaco{
+		min-width: 20px;
+
+	}
+	#Contato2 .format_conteudo{
+		padding: 10px;
+	}
+
+}
+
+/* Adaptação rotação Tablet*/
+@media screen and (min-height: 550px){
+
+	.sectOne{
+	background-size: 150% 100%;
+	background-position: 0px 0px;
+	}
+}
+
+
+
+
+/* Adaptação para site desktop */
+@media screen and (min-width: 1000px){
+
+	#Servico img {
+		max-width: 15vw;
+		max-height: 15vw;
+	}
+	#Servico table{
+		margin-left: 10%;
+	}
+
+
+	#Contato2 table{
+		margin-left: 2.5vw;
+	}
+	#Contato2 .espaco{
+		min-width: 20px;
+	}
+
+}
+
+
+/* Adaptação para site desktop acima 17" */
+@media screen and (min-width: 1500px){
+
+	#Servico img {
+		max-width: 17vw;
+		max-height: 17vw;
+	}
+	#Servico table{
+		margin-left: 22%;
+	}
+	#Servico h2 {
+		font-size: 3vh;
+	}
+
+
+	#Contato2 table{
+		margin-left: 18vw;
+	}
+	#Contato2 .espaco{
+		min-width: 50px;
+	}
+}
+
+
+
+	/* Adaptação para site SmartTV */
+	@media screen and (min-width: 2500px){
+		#Servico img {
+			max-width: 17vw;
+			max-height: 17vw;
+		}
+		#Servico table{
+			margin-left: 22%;
+		}
+		#Servico h2 {
+			font-size: 3vh;
+		}
+
+
+		#Contato2 table{
+			margin-left: 18vw;
+		}
+		#Contato2 .espaco{
+			min-width: 50px;
+		}
 }
