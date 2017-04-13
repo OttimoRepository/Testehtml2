@@ -503,6 +503,9 @@ nav {
 		#Servico p{
 			font-size: .6rem;
 		}
+		#Servico .espaco_linha{
+			line-height: 10px;
+		}
 
 
 		#Contato2 table{
