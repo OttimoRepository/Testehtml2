@@ -438,7 +438,11 @@ nav {
 /*------------- Adaptador de MEDIA ------------- */
 /* Adaptação para site mobile */
 @media screen and (min-width: 1px){
-
+	
+	html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 	#Home p{
 		line-height: 7.5rem;
 	}
