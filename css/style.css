@@ -446,8 +446,9 @@ nav {
 @media screen and (min-width: 1px){
 	
 	html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 	#Home p{
 		line-height: 7.5rem;
