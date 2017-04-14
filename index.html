@@ -36,6 +36,16 @@
                 }
             }
           })
+          
+          
+          
+          var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);
+          
 <!-- controlador para exibir menu do botão da Home -->
       var roundButton = document.querySelector("#roundButton");
       var MenuOculto = document.querySelector("#MenuOculto");
