@@ -27,6 +27,9 @@ html,body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .sectHome{
 	background-image: url("../images/imagem1.jpg");
