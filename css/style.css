@@ -457,14 +457,14 @@ nav {
 	}
 	#cabeçalho{
 		position: fixed;
-		height: 1.5rem;
+		height: 6.25rem;
 	}
 	.cabeçalho_logo_span{
-		line-height: 1.5rem;
+		line-height: 6.25rem;
 		font-size: .8rem;
 	}
 	.cabeçalho_logo{
-		width: 5rem;
+		width: 8rem;
 	}
 	.botão_cabeçalho{
 		width: 1.5rem;
