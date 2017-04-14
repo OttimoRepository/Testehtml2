@@ -471,10 +471,11 @@ nav {
 		height: 1.5rem;
 	}
 	#roundButton{
-		width: 1vw;
-		height: 3vh;
-		border: 2px solid #0065A6;
+		width: 13vw;
+		height: 15vh;
+		border: 10px solid #0065A6;
 		margin-top: .2rem;
+		border-radius: 0%;
 	}
 	#MenuOculto h2 a{
 		line-height:5rem ;
