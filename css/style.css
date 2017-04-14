@@ -113,6 +113,7 @@ html,body{
 		border-radius: 50%;
 		border: 10px solid #0065A6;
 		outline: none;
+		-webkit-transition: transform .3s cubic-bezier(0, .52, 0, 1);
 		transition: transform .3s cubic-bezier(0, .52, 0, 1);
 		margin-top: 2rem;
 }
@@ -133,8 +134,11 @@ html,body{
 	top: 0;
 	left: 0;
 	background: rgba(0,0,0,1);
+	-webkit-transform: translate3d(-100vw,0,0);
 	transform: translate3d(-100vw,0,0);
+	-webkit-transition: transform .3s cubic-bezier(0,.52,0,1);
 	transition: transform .3s cubic-bezier(0,.52,0,1);
+	-webkit-overflow: hidden;
 	overflow: hidden;
 }
 #MenuOculto h2 a{
@@ -148,6 +152,7 @@ html,body{
 	text-decoration: underline;
 }
 #MenuOculto.visivel{
+	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
