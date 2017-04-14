@@ -467,14 +467,14 @@ nav {
 		width: 8rem;
 	}
 	.botão_cabeçalho{
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 3.5rem;
+		height: 6.25rem;
 	}
 	#roundButton{
 		width: 13vw;
-		height: 15vh;
+		height: 6rem;
 		border: 10px solid #0065A6;
-		margin-top: .2rem;
+		margin-top: .25rem;
 		border-radius: 0%;
 	}
 	#MenuOculto h2 a{
