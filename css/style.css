@@ -459,15 +459,15 @@ nav {
 }
 
 	#publicidade p{
-		height: 1.5rem;
-		width: 200px;
+		height: 6.25rem;
+		width: 120px;
 	}
 	#cabeçalho{
 		position: fixed;
 		height: 6.25rem;
 	}
 	.cabeçalho_logo_span{
-		line-height: 6.25rem;
+		line-height: 3.15rem;
 		font-size: .8rem;
 	}
 	.cabeçalho_logo{
