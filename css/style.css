@@ -64,9 +64,11 @@ html,body{
 	left: 0;
 	z-index: 900;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	font-size: 0;
 	letter-spacing: normal;
 	position: fixed;
+	display:block;
 }
 .botão_cabeçalho{
 	display: inline-block;
