@@ -468,6 +468,7 @@ nav {
 		width: 120px;
 	}
 	#cabeçalho{
+		-webkit-position: fixed;
 		position: fixed;
 		height: 6.25rem;
 	}
