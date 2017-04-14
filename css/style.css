@@ -455,7 +455,7 @@ nav {
 	}
 #Home p {
 	font-size: .8em;
-	line-height: 1.5rem;
+	line-height: 3.15rem;
 }
 
 	#publicidade p{
@@ -467,7 +467,7 @@ nav {
 		height: 6.25rem;
 	}
 	.cabeçalho_logo_span{
-		line-height: 3.15rem;
+		line-height: 6.25rem;
 		font-size: .8rem;
 	}
 	.cabeçalho_logo{
