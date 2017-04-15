@@ -5,7 +5,7 @@
     <title>Ottimo - Tecnologia e Qualidade</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/normalize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no">
     <link rel="shortcut icon" href="images/FavIcon.ico"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script type="text/javascript">
@@ -36,24 +36,15 @@
                 }
             }
           })
-          
-          
-          
-          var scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
-
-window.addEventListener("scroll", scrollEventHandler, false);
-          
 <!-- controlador para exibir menu do botão da Home -->
-      var roundButton = document.querySelector("#roundButton");
+      var roundButton = document.querySelector(".item2");
       var MenuOculto = document.querySelector("#MenuOculto");
       var Menu_Bot_1 = document.querySelector("#Menu_Bot_1");
       var Menu_Bot_2 = document.querySelector("#Menu_Bot_2");
       var Menu_Bot_3 = document.querySelector("#Menu_Bot_3");
       var Menu_Bot_4 = document.querySelector("#Menu_Bot_4");
       var Menu_Bot_5 = document.querySelector("#Menu_Bot_5");
+      var cabeçalho_logo = document.querySelector("#Botão_Teste_Cont");
 
       roundButton.addEventListener("click", showMenu, false);
       MenuOculto.addEventListener("click", hideMenu, false);
@@ -64,13 +55,23 @@ window.addEventListener("scroll", scrollEventHandler, false);
       Menu_Bot_5.addEventListener("click", hideMenu, false);
 
       function showMenu(e){
+        if (roundButton.classList.contains("is-active")) {
+          hideMenu();
+        } else {
+          roundButton.classList.add("is-active");
+        }
+        cabeçalho_logo.style.width = "100px";
         MenuOculto.classList.add("visivel");
-        document.querySelector("#cabeçalho").style.position = "static";
+        document.querySelector(".cabeçalho_logo").style.visibility = "hidden";
         document.querySelector("#publicidade p").style.position = "static";
         document.body.style.overflow =  "hidden";
+
       }
       function hideMenu(e){
+        roundButton.classList.remove("is-active");
         MenuOculto.classList.remove("visivel");
+        document.querySelector(".cabeçalho_logo").style.visibility = "visible";
+        document.querySelector("#Botão_Teste_Cont").style.width = "auto";
         document.body.style.overflow = "auto";
         document.querySelector("#cabeçalho").style.position = "fixed";
         document.querySelector("#publicidade p").style.position = "absolute";
@@ -83,34 +84,34 @@ window.addEventListener("scroll", scrollEventHandler, false);
 
 <body>
 <!--**********************Seção Home********************************* -->
-<div class ="sect sectHome" id="Home">
-<div id="MenuOculto">
-  <h2><a href="#Home" id="Menu_Bot_1">Home</a></h2>
-  <h2><a href="#Sobre" id="Menu_Bot_2">Sobre da Ottimo</a></h2>
-  <h2><a href="#Servico" id="Menu_Bot_3">Serviço</a></h2>
-  <h2><a href="#Noticias" id="Menu_Bot_4">Noticias</a></h2>
-  <h2><a href="#Contato2" id="Menu_Bot_5">Contato</a></h2>
-</div>
-
-<header id="cabeçalho">
-  <div class="botão_cabeçalho">
-    <button id="roundButton"></button>
+  <div class ="sect sectHome" id="Home">
+<!--***Tela que sobe ao clicar na lista***-->
+  <div id="MenuOculto">
+    <div class="publicidade">
+      <p>Siga a Ottimo</p>
+      <a href="https://www.facebook.com/ottimotech/" class="face"></a>
+      <a href="https://www.instagram.com/ottimotech/" class="insta"></a>
+      <a href="https://www.linkedin.com/company-beta/16245155/" class="linkein"></a>
+    </div>
+    <h2><a href="#Home" id="Menu_Bot_1">Home</a></h2>
+    <h2><a href="#Sobre" id="Menu_Bot_2">Sobre da Ottimo</a></h2>
+    <h2><a href="#Servico" id="Menu_Bot_3">Serviço</a></h2>
+    <h2><a href="#Noticias" id="Menu_Bot_4">Noticias</a></h2>
+    <h2><a href="#Contato2" id="Menu_Bot_5">Contato</a></h2>
   </div>
-  <a href="#Home" class="cabeçalho_logo">
-    <span class="cabeçalho_logo_span">OTTIMO</span>
-  </a>
+<!--***Barra de Publicidade***-->
+<!--***Botão da Lista + Logo***-->
+  <div id="Botão_Teste_Cont">
+    <div class="botão_cabeçalho">
+      <button class="item item2">
+        <span>menu toggle</span>
+      </button>
+    </div>
+    <a href="#Home" class="cabeçalho_logo">
+      <span class="cabeçalho_logo_span">OTTIMO</span>
+    </a>
+  </div>
 
-</header>
-
-
-<div id="publicidade">
-  <p>Siga a Ottimo<br><a href="https://www.facebook.com/ottimotech/" class="face"></a><a href="https://www.instagram.com/ottimotech/" class="insta"></a><a href="https://www.linkedin.com/company-beta/16245155/" class="linkein"></a></p>
-</div>
-
-
-
-  <h1>OTTIMO - Tecnologia e Qualidade</h1>
-  <p>najndjnajdnsajdnjnddsdnjndjasdsaanndjasndjna</p>
 </div>
 
 <!--**********************Seção Sobre a Empresa********************************* -->
@@ -156,11 +157,11 @@ Softwares de gestão? Desenvolvemos! Apresente-nos o desafio da sua empresa que 
 <div class ="sect sectContato" id="Contato2">
   <table>
     <tr>
-      <td class="format_conteudo"><img src="images/tel.png" alt="" class="orçamento"><h2>Telefone</h2><p>Ligue pra nós, será um
+      <td class="format_conteudo"><img src="images/celular1.png" alt="" class="orçamento"><h2>Telefone</h2><p>Ligue pra nós, será um
 prazer atender você.
 31 3491-1853</p><a href="#">Fazer cotação</a></td><td class="espaco"></td>
-      <td class="format_conteudo"><img src="images/mail.png" alt=""><h2>Email</h2><p>Você também pode entrar em contato por e-mail.</p><a href="#" class="orçamento">Contato</a></td><td class="espaco"></td>
-      <td class="format_conteudo"><img src="images/mail.png" alt=""><h2>Cotação Online</h2><p>Faça uma cotação online, você será
+      <td class="format_conteudo"><img src="images/email.png" alt=""><h2>Email</h2><p>Você também pode entrar em contato por e-mail.</p><a href="#" class="orçamento">Contato</a></td><td class="espaco"></td>
+      <td class="format_conteudo"><img src="images/calculadora.png" alt=""><h2>Cotação Online</h2><p>Faça uma cotação online, você será
 respondendo em 24 horas</p><a href="#" class="orçamento">Fazer cotação</a></td>
     </tr>
   </table>
