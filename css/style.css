@@ -44,6 +44,7 @@ Configuração de Divisórias
 	-moz-background-size: 100% 100%;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
+	overflow-x: hidden;
 }
 .sectHome{
 	background-image: url("../images/tech_optimaziers.jpg");
