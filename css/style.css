@@ -87,6 +87,7 @@ Cabeçalho da página
 	transform: translate3d(-100vw,0,0);
 	transition: transform .3s cubic-bezier(0,.52,0,1);
 	overflow: hidden;
+	z-index: 900;
 }
 #MenuOculto h2 a{
 	color: #fff;
@@ -360,41 +361,87 @@ Botão_Teste_Cont .item:focus {
 
 }
 #Servico h1 {
-	text-align: center;
-	padding: 80px 0px 20px 0px;
-	margin: 0;
+text-align: center;
+padding: 80px 0px 20px 0px;
+margin: 0;
+width: 100vw;
 }
-#Servico img {
-	width: auto;
-	height: auto;
+#Servico .tabela{
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+
+
+}
+#Servico .tabela .TI{
+	background: transparent;
+	width: 40%;
+	height: 40%;
+	display: inline-block;
+	top: 0;
+	left: 10vw;
+	position: inherit;
+	z-index: 2;
+}
+#Servico .tabela .Telecom{
+	background: transparent;
+	width: 40%;
+	height: 40%;
+	position: absolute;
+	display: inline-block;
+	left: 50vw;
+	top: 0;
+	z-index: 2;
+}
+#Servico .tabela .Infra{
+	background: transparent;
+	width: 40%;
+	height: 40%;
+	display: inline-block;
+	position: absolute;
+	left: 10vw;
+	top: 45vh;
+	z-index: 2;
+}
+#Servico .tabela .Automação{
+	background: transparent;
+	width: 40%;
+	height: 40%;
+	display: inline-block;
+	position: absolute;
+	left: 50vw;
+	top: 45vh;
+	z-index: 2;
+}
+
+#Servico .tabela .Img{
+	background: transparent;
+	width: 100%;
+	height: 50%;
+}
+#Servico img{
+	height: 100%;
 	display: block;
 	margin: 0 auto;
 }
-#Servico table{
-	float: left;
-	margin-left: 18%;
+#Servico .tabela .Texto{
+	background: transparent;
+	width: 100%;
+	height: 50%;
 }
-#Servico td{
-	max-width: 500px;
-	width: auto;
-}
-#Servico h2 {
+#Servico .tabela h2{
+	background: transparent;
 	text-align: center;
-	padding-top: 10px;
+	font-size: 2em;
 }
-#Servico p{
+#Servico .tabela p{
+	background: transparent;
 	text-align: center;
-
-}
-#Servico .espaco{
-	min-width: 50px;
-	opacity: 0;
+	font-size: 1.4em;
 }
 
-#Servico .espaco_linha{
-	line-height: 50px;
-	opacity: 0;
-}
 /*---------Contato---------*/
 #Contato2{
 
@@ -511,7 +558,7 @@ Botão_Teste_Cont .item:focus {
 	#Sobre h1{
 		height: initial;
 		width: 100vw;
-		padding-top: 30px;
+		padding-top: 90px;
 	}
 	#Sobre h2{
 		width: 100vw;
@@ -527,8 +574,39 @@ Botão_Teste_Cont .item:focus {
 		margin: 0px 0px 0px 0px
 	}
 /*$$$$$ Adaptação da SERVIÇO $$$$*/
-
-
+#Servico h1{
+font-size: 1em;
+width: 100vw;
+padding: 90px 0px 10px 0px;
+}
+#Servico .tabela h2{
+	font-size: 1em;
+}
+#Servico .tabela p{
+	font-size: 1em;
+}
+#Servico .tabela .TI{
+	width: 100vw;
+	left: 0vw;
+}
+#Servico .tabela .Telecom{
+	width: 100vw;
+	left: 0vw;
+	top: 45vh;
+}
+#Servico .tabela .Infra{
+	width: 100vw;
+	top: 85vh;
+	left: 0vw;
+}
+#Servico .tabela .Automação{
+	width: 100vw;
+	left: 0vw;
+	top: 120vh;
+}
+.sectServiço{
+	height: 180%;
+}
 /* ##########################################
    Adaptação para site tablet
 ########################################## */
