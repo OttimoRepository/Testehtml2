@@ -36,7 +36,7 @@ Configuração de Divisórias
 
 .sect {
   height: 105%;
-	width: 115vw;
+	width: 115%;
   background-color: rgb(214, 215, 176);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -62,8 +62,7 @@ Configuração de Divisórias
 
 }
 .sectContato{
-	background-image: url("../images/imagem5.jpg");
-	b
+	background: rgb(68, 90, 108);
 }
 
 
@@ -78,13 +77,13 @@ Cabeçalho da página
 
 
 #MenuOculto{
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	background: rgba(27, 27, 27, 1);
-	transform: translate3d(-100vw,0,0);
+	transform: translate3d(-100%,0,0);
 	transition: transform .3s cubic-bezier(0,.52,0,1);
 	overflow: hidden;
 	z-index: 900;
@@ -193,6 +192,9 @@ left: 75px;
 	text-align: center;
 	font-size: 0;
 	vertical-align: middle;
+}
+#Botão_Teste_Cont .cabeçalho_logo:hover .cabeçalho_logo_span{
+		transform: translateY(-5px);
 }
 #Botão_Teste_Cont .cabeçalho_logo_span{
 	background: transparent;
@@ -364,7 +366,7 @@ Botão_Teste_Cont .item:focus {
 text-align: center;
 padding: 80px 0px 20px 0px;
 margin: 0;
-width: 100vw;
+width: 100%;
 }
 #Servico .tabela{
 	background: transparent;
@@ -381,7 +383,7 @@ width: 100vw;
 	height: 40%;
 	display: inline-block;
 	top: 0;
-	left: 10vw;
+	left: 10%;
 	position: inherit;
 	z-index: 2;
 }
@@ -391,7 +393,7 @@ width: 100vw;
 	height: 40%;
 	position: absolute;
 	display: inline-block;
-	left: 50vw;
+	left: 50%;
 	top: 0;
 	z-index: 2;
 }
@@ -401,8 +403,8 @@ width: 100vw;
 	height: 40%;
 	display: inline-block;
 	position: absolute;
-	left: 10vw;
-	top: 45vh;
+	left: 10%;
+	top: 45%;
 	z-index: 2;
 }
 #Servico .tabela .Automação{
@@ -411,8 +413,8 @@ width: 100vw;
 	height: 40%;
 	display: inline-block;
 	position: absolute;
-	left: 50vw;
-	top: 45vh;
+	left: 50%;
+	top: 45%;
 	z-index: 2;
 }
 
@@ -497,6 +499,7 @@ width: 100vw;
 	position: inherit;
 	z-index: 2;
 	top: 33%;
+	padding: 10px;
 }
 #Contato2 .tabela .botão{
 	background: transparent;
@@ -608,11 +611,11 @@ width: 100vw;
 /*$$$$$ Adaptação da SOBRE $$$$*/
 	#Sobre h1{
 		height: initial;
-		width: 100vw;
+		width: 100%;
 		padding-top: 90px;
 	}
 	#Sobre h2{
-		width: 100vw;
+		width: 100%;
 		margin: 30px 0px 0px 0px;
 	}
 	#Sobre_Txt{
@@ -627,7 +630,7 @@ width: 100vw;
 /*$$$$$ Adaptação da SERVIÇO $$$$*/
 #Servico h1{
 font-size: 1em;
-width: 100vw;
+width: 100%;
 padding: 90px 0px 10px 0px;
 }
 #Servico .tabela h2{
@@ -637,23 +640,23 @@ padding: 90px 0px 10px 0px;
 	font-size: 1em;
 }
 #Servico .tabela .TI{
-	width: 100vw;
-	left: 0vw;
+	width: 100%;
+	left: 0%;
 }
 #Servico .tabela .Telecom{
-	width: 100vw;
-	left: 0vw;
-	top: 45vh;
+	width: 100%;
+	left: 0%;
+	top: 45%;
 }
 #Servico .tabela .Infra{
-	width: 100vw;
-	top: 85vh;
-	left: 0vw;
+	width: 100%;
+	top: 85%;
+	left: 0%;
 }
 #Servico .tabela .Automação{
-	width: 100vw;
-	left: 0vw;
-	top: 120vh;
+	width: 100%;
+	left: 0%;
+	top: 120%;
 }
 .sectServiço{
 	height: 180%;
@@ -661,27 +664,27 @@ padding: 90px 0px 10px 0px;
 /*$$$$$ Adaptação da Noticias $$$$*/
 /*$$$$$ Adaptação da Contato $$$$*/
 #Contato2 .tabela{
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	padding: 0px;
 	margin: 90px 0px 0px 10px;
 }
 #Contato2 .tabela .Telefone{
 	width: 100%;
-	height: 35vh;
+	height: 35%;
 }
 #Contato2 .tabela .Email{
 	width: 100%;
-	height: 35vh;
+	height: 35%;
 	left: 0;
-	top: 40vh;
+	top: 40%;
 }
 #Contato2 .tabela .Formulario{
 	width: 100%;
-	height: 35vh;
+	height: 35%;
 	right: 0;
 	bottom: auto;
-	top: 80vh;
+	top: 80%;
 }
 #Contato2 .tabela h2{
 	font-size: 1em;
@@ -694,7 +697,7 @@ padding: 90px 0px 10px 0px;
 	line-height: 3.5rem;
 }
 .sectContato{
-	height: 130vh;
+	height: 130%;
 }
 
 /* ##########################################
@@ -706,7 +709,7 @@ padding: 90px 0px 10px 0px;
 	line-height: 7.5rem;
 }
 #Home h1{
-	padding: 30vh 0px 0px 0px;
+	padding: 30% 0px 0px 0px;
 }
 #++++++ p{
 	height: 7.5rem;
@@ -716,8 +719,8 @@ padding: 90px 0px 10px 0px;
 }
 
 	#Servico img {
-		max-width: 25vw;
-		max-height: 25vw;
+		max-width: 25%;
+		max-height: 25%;
 	}
 	#Servico table{
 		margin-left: 1%;
@@ -727,7 +730,7 @@ padding: 90px 0px 10px 0px;
 		padding: 100px 0px 50px 0px;
 	}
 	#Servico h2{
-		font-size: 3vh;
+		font-size: 3%;
 	}
 	#Servico .espaco{
 		min-width: 20px;
@@ -735,7 +738,7 @@ padding: 90px 0px 10px 0px;
 
 
 	#Contato2 table{
-		margin-left: 4vw;
+		margin-left: 4%;
 		margin-top: 50%;
 		max-width: 700px;
 		min-width: 650px;
@@ -766,8 +769,8 @@ padding: 90px 0px 10px 0px;
 @media screen and (min-width: 1000px) and (max-width: 1500px){
 
 	#Servico img {
-		max-width: 10vw;
-		max-height: 10vw;
+		max-width: 10%;
+		max-height: 10%;
 	}
 	#Servico table{
 		margin-left: 10%;
@@ -775,7 +778,7 @@ padding: 90px 0px 10px 0px;
 
 
 	#Contato2 table{
-		margin-left: 6.5vw;
+		margin-left: 6.5%;
 	}
 	#Contato2 .espaco{
 		min-width: 20px;
@@ -788,19 +791,19 @@ padding: 90px 0px 10px 0px;
 @media screen and (min-width: 1500px) and (max-width: 2000px){
 
 	#Servico img {
-		max-width: 17vw;
-		max-height: 13vw;
+		max-width: 17%;
+		max-height: 13%;
 	}
 	#Servico table{
 		margin-left: 22%;
 	}
 	#Servico h2 {
-		font-size: 3vh;
+		font-size: 3%;
 	}
 
 
 	#Contato2 table{
-		margin-left: 18vw;
+		margin-left: 18%;
 	}
 	#Contato2 .espaco{
 		min-width: 50px;
@@ -812,19 +815,19 @@ padding: 90px 0px 10px 0px;
 	/* Adaptação para site SmartTV */
 	@media screen and (min-width: 2000px) and (max-width: 2500px){
 		#Servico img {
-			max-width: 17vw;
-			max-height: 17vw;
+			max-width: 17%;
+			max-height: 17%;
 		}
 		#Servico table{
 			margin-left: 22%;
 		}
 		#Servico h2 {
-			font-size: 3vh;
+			font-size: 3%;
 		}
 
 
 		#Contato2 table{
-			margin-left: 18vw;
+			margin-left: 18%;
 		}
 		#Contato2 .espaco{
 			min-width: 50px;
