@@ -628,6 +628,10 @@ width: 100%;
 		margin: 0px 0px 0px 0px
 	}
 /*$$$$$ Adaptação da SERVIÇO $$$$*/
+#Servico .tabela{
+	width: 400px;
+	height: 700px;
+}
 #Servico h1{
 font-size: 1em;
 width: 100%;
