@@ -555,6 +555,13 @@ width: 100%;
    Adaptação para site mobile
 ########################################## */
 @media screen and (max-width: 400px){
+.body{
+	width: 400px;
+	
+}
+.sect{
+	width: 400px;
+}
 /*$$$$$ Adaptação da HOME $$$$*/
 	#Botão_Teste_Cont .cabeçalho_logo{
 		width: 9.5rem;
