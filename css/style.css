@@ -662,7 +662,7 @@ padding: 90px 0px 10px 0px;
 /*$$$$$ Adaptação da Contato $$$$*/
 #Contato2 .tabela{
 	width: 100vw;
-	height: 180vh;
+	height: 100vh;
 	padding: 0px;
 	margin: 90px 0px 0px 10px;
 }
@@ -694,7 +694,7 @@ padding: 90px 0px 10px 0px;
 	line-height: 3.5rem;
 }
 .sectContato{
-	height: 100%;
+	height: 130vh;
 }
 
 /* ##########################################
