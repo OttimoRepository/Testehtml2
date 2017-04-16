@@ -678,9 +678,10 @@ padding: 90px 0px 10px 0px;
 }
 #Contato2 .tabela .Formulario{
 	width: 100%;
-	height: 35vh%;
+	height: 35vh;
 	right: 0;
-	bottom: 0;
+	bottom: auto;
+	top: 80vh;
 }
 #Contato2 .tabela h2{
 	font-size: 1em;
