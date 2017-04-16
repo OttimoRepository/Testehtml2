@@ -664,7 +664,7 @@ padding: 90px 0px 10px 0px;
 	width: 100vw;
 	height: 180vh;
 	padding: 0px;
-	margin: 90px 0px 0px 0px;
+	margin: 90px 0px 0px 10px;
 }
 #Contato2 .tabela .Telefone{
 	width: 100%;
@@ -694,7 +694,7 @@ padding: 90px 0px 10px 0px;
 	line-height: 3.5rem;
 }
 .sectContato{
-	height: 180%;
+	height: 140%;
 }
 
 /* ##########################################
